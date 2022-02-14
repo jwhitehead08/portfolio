@@ -17,33 +17,6 @@ body {
 
 .sections {
     background: var(--tertiary-color);
-
-}
-
-.block {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
-  
-}
-
-.block h2 {
-    padding: 0;
-    flex: 1;
-    font-weight: bolder;
-    font-size: 36px;
-    align-items: flex-start;
-}
-
-.block .section-content {
-    padding-left: 5%;
-    flex: 0 0 900px;
-    border-left: 2px solid black;
-    align-items: center;
 }
 
 /* HEADER & NAV STYLES START */
@@ -159,23 +132,36 @@ footer h2 {
 
 /* START ABOUT ME SECTION */
 
+.block {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%; 
+}
+
+.block article {
+    padding: 0;
+    flex: 1 200px;
+    font-weight: bolder;
+    font-size: 36px;
+    align-items: flex-start;
+}
+
+.block article:nth-of-type(2) {
+    padding-left: 5%;
+    flex: 2 400px;
+    border-left: 2px solid black;
+    align-items: center;
+}
 
 /* START WORK SECTION */
-#work .section-content {
-    justify-content: space-between;
-}
-
-#work .row-2 {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    display: flex;
-    margin: 0 0 7px 0;
-}
-
-#work .row-3 {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    display: flex;
+.examples {
+    flex: 1 200px;
+    flex-wrap: wrap-reverse;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .example-1 {
@@ -189,7 +175,6 @@ footer h2 {
     padding: 150px 20px 20px 0px;
     border: 3px solid var(--secondary-color);
     margin: 0 0 7px 0;
-    
 }
 
 .example-1:hover {
@@ -450,6 +435,4 @@ footer h2 {
         width: 100%;
         border-left: none;
     }
-
-  
-  }
+}
