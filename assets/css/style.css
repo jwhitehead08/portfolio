@@ -19,6 +19,9 @@ body {
     background: var(--tertiary-color);
 }
 
+h2 {
+    font-size: 35px;
+}
 /* HEADER & NAV STYLES START */
 header {
     padding: 20px 35px 20px 0;
@@ -131,50 +134,84 @@ footer h2 {
 /* END HERO STYLES */
 
 /* START ABOUT ME SECTION */
-
-.block {
+.block-1 {
     display: flex;
-    flex-wrap: nowrap;
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%; 
-}
-
-.block article {
-    padding: 0;
-    flex: 1 200px;
-    font-weight: bolder;
-    font-size: 36px;
-    align-items: flex-start;
-}
-
-.block article:nth-of-type(2) {
-    padding-left: 5%;
-    flex: 2 400px;
-    border-left: 2px solid black;
+    flex-wrap:nowrap;
     align-items: center;
+    justify-content: space-between;
+    margin: 15px 100px 15px 100px;
+    justify-content: center;
+    width: 90%;
 }
+
+.block-1 .section-title-box {
+    display: flex;
+    flex: 1 200px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 10px 0 0;
+    width: 10%;
+    text-align: right;
+}
+
+.block-1 .section-content {
+   
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-left: 2px solid black;
+    margin: 0 25px 0 20px;
+    padding: 0 20px 0 20px;
+    width: 90%;
+}
+
 
 /* START WORK SECTION */
-.examples {
-    flex: 1 200px;
-    flex-wrap: wrap-reverse;
-    flex-flow: wrap row;
+.block-2 {
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 15px 100px 15px 100px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.block-2 .section-title-box {
+    display: flex;
+    flex: 1 200px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 10px 0 0;
+    width: 10%;
+   
+    
+}
+
+.block-2 .section-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid black;
+    margin: 0 25px 0 20px;
+    padding: 0 20px 0 20px;
+    width: 90%;
 }
 
 .example-1 {
     background-image: url('../images/image1.jpeg');
-    background-size: cover;
+    background-position: center;
+    width: 950px;
+    height: 200px;
+    border: 3px solid var(--secondary-color);
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-position: 100%;
-    padding: 150px 20px 20px 0px;
-    border: 3px solid var(--secondary-color);
-    margin: 0 0 7px 0;
+    align-items: flex-end;
+    margin: 5px;
+
 }
 
 .example-1:hover {
@@ -185,16 +222,15 @@ footer h2 {
 
 .example-2 {
     background-image: url('../images/image2.jpeg');
-    background-size: cover;
-    width: 49.5%;
-    height: 24%;
+    object-fit: contain;
+  
+    width: 470px;
+    height: 200px;
+    border: 3px solid var(--secondary-color);
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-position: 100%;
-    padding: 150px 20px 20px 0px;
-    border: 3px solid var(--secondary-color);
+    align-items: flex-end;
+    margin: 5px;
 }
 
 .example-2:hover {
@@ -204,17 +240,13 @@ footer h2 {
 
 .example-3 {
     background-image: url('../images/image3.jpeg');
-    background-size: 48%;
-    background-size: cover;
-    width: 49.5%;
-    height: 24%;
+    width: 470px;
+    height: 200px;
+    border: 3px solid var(--secondary-color);
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-position: 100%;
-    padding: 150px 20px 20px 0px;
-    border: 3px solid var(--secondary-color);
+    align-items: flex-end;
+    margin: 5px;
 }
 
 .example-3:hover {
@@ -224,17 +256,13 @@ footer h2 {
 
 .example-4 {
     background-image: url('../images/image4.jpeg');
-    background-size: 48%;
-    background-size: cover;
-    width: 49.5%;
-    height: 24%;
+    width: 470px;
+    height: 200px;
+    border: 3px solid var(--secondary-color);
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-position: 100%;
-    padding: 150px 20px 20px 0px;
-    border: 3px solid var(--secondary-color);
+    align-items: flex-end;
+    margin: 5px;
 }
 
 .example-4:hover {
@@ -244,17 +272,13 @@ footer h2 {
 
 .example-5 {
     background-image: url('../images/image5.jpeg');
-    background-size: 48%;
-    background-size: cover;
-    width: 49.5%;
-    height: 24%;
+    width: 470px;
+    height: 200px;
+    border: 3px solid var(--secondary-color);
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-position: 100%;
-    padding: 150px 20px 20px 0px;
-    border: 3px solid var(--secondary-color);
+    align-items: flex-end;
+    margin: 5px;
 }
 
 .example-5:hover {
@@ -268,6 +292,8 @@ footer h2 {
     text-align: left;
     border: 3px solid var(--secondary-color);
     text-align: center;
+    margin-bottom: 15px;
+    align-items: flex-start;
 }
 
 .description h3 {
@@ -282,24 +308,51 @@ footer h2 {
 
 
 /* START CONTACT ME SECTION */
-#contact-me .section-content {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#contact-me ul {
+.block-3 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
     align-items: center;
     justify-content: space-between;
+    margin: 15px 100px 15px 100px;
+    justify-content: center;
+    width: 90%;
+}
+
+.block-3 .section-title-box {
+    display: flex;
+    flex: 1 200px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 10px 0 0;
+    width: 10%;
+    text-align: right;
+}
+
+.block-3 .section-content {
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-left: 2px solid black;
+    margin: 0 25px 0 20px;
+    padding: 0 20px 0 20px;
+    width: 90%;
+}
+
+.block-3 .section-content ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    width: 95%;
 }
 
-#contact-me ul li {
-    text-decoration: underline;
-    font-weight: bold;
+.block-3 .section-content ul li {
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
 }
-
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
