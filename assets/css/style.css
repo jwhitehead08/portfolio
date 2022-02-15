@@ -137,7 +137,7 @@ footer h2 {
 .block-1 {
     display: flex;
     flex-wrap:nowrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin: 15px 100px 15px 100px;
     justify-content: center;
@@ -399,6 +399,9 @@ footer h2 {
 
 @media screen and (max-width: 768px) {
 
+    header {
+        width: 100vw;
+    }
     header h1 {
         justify-content: center;
         padding: 5px;
@@ -406,7 +409,9 @@ footer h2 {
     }
 
     .hero {
-        justify-content: center;
+            justify-content: center;
+        margin: 0 5% 0 5%;
+        width: 100%;
 
     }
     .hero-cta {
@@ -420,6 +425,7 @@ footer h2 {
     .hero {
         width: 100%;
         flex: 1;
+        padding: 10px;
     }
 
     .hero-cta {
@@ -433,19 +439,106 @@ footer h2 {
         padding: 0 100% 0 100%;
     }
 
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+    
     header h1 {
         justify-content: center;
         padding: 5px;
+        margin: 0;
         border-radius: 15px;
     }
 
-    .block .section-content {
+    
+    .block-1 {
+        justify-content: center;
+        margin: 0 5% 0 5%;
+        width: 100%;
+    }
+
+    .block-1 .section-title-box {
+        padding: 0;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .block-1 .section-content {
         padding: 0;
         margin: 0;
-        border-left: 0px;
+        border: none;
         align-items: center;
         justify-content: center;
         flex: 0 100%;
+    }
+
+    .block-2 {
+        justify-content: center;
+        margin: 0 5% 0 5%;
+        width: 100%;
+    }
+
+    .block-2 .section-title-box {
+        padding: 0;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .block-2 .section-content {
+        border: none;
+    }
+
+    #examples {
+        width: 100vw;
+    }
+
+    .block-3 {
+        justify-content: center;
+        margin: 0 5% 0 5%;
+        width: 100%;
+    }
+
+    .block-3 .section-title-box {
+        padding: 0;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .block-3 .section-content {
+        padding: 0;
+        margin: 0;
+        border-left: 0px;
+        align-items: flex-start;
+        justify-content: center;
+        width:  50vw;
+        flex-wrap: nowrap;
+    }
+
+    .block-3 .section-content ul {
+        list-style: square;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block-3 .section-content ul li {
+        padding: 10%;
     }
 
     #about-me {
@@ -488,4 +581,6 @@ footer h2 {
         width: 100%;
         border-left: none;
     }
+
+
 }
