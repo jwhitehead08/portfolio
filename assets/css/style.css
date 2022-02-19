@@ -17,6 +17,8 @@ body {
 
 .sections {
     background: var(--tertiary-color);
+    justify-content: center;
+    width: 100vw;
 }
 
 h2 {
@@ -152,7 +154,7 @@ footer h2 {
     justify-content: flex-end;
     align-items: flex-start;
     margin: 0 10px 0 0;
-    width: 10%;
+    width: 1;
     text-align: right;
 }
 
@@ -166,7 +168,7 @@ footer h2 {
     border-left: 2px solid black;
     margin: 0 25px 0 20px;
     padding: 0 20px 0 20px;
-    width: 90%;
+    width: 90vw;
 }
 #about-me .section-content img {
     height: 200px;
@@ -185,13 +187,13 @@ footer h2 {
     border-left: 2px solid black;
     margin: 0 25px 0 20px;
     padding: 0 20px 0 20px;
-    width: 90%;
+    width: 90vw;
 }
 
 .example-1 {
     background-image: url('../images/image1.jpeg');
     background-position: center;
-    width: 950px;
+    width: 67vw;
     height: 200px;
     border: 3px solid var(--secondary-color);
     display: flex;
@@ -309,7 +311,7 @@ footer h2 {
     border-left: 2px solid black;
     margin: 0 25px 0 20px;
     padding: 0 20px 0 20px;
-    width: 90%;
+    width: 90vw;
 }
 
 #contact-me .section-content ul {
@@ -510,6 +512,7 @@ footer h2 {
         margin: 15px;
         padding: none;
         flex-direction: column;
+        width: 100vw;
       
     }
 
@@ -521,7 +524,7 @@ footer h2 {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        width: 100%;
+        width: 90%;
         
     }
 
@@ -532,6 +535,7 @@ footer h2 {
         align-items: center;
         justify-content: center;
         flex: 0 100%;
+        width: 90%;
     }
 
     #work {
@@ -666,6 +670,8 @@ footer h2 {
 
     #about-me .section-content img {
         height: 400px;
+        padding: none;
+        margin: none;
     }
 
     #work {
